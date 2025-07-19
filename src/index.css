@@ -8,89 +8,113 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark theme - Creator Analytics Studio */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Electric purple primary */
+    --primary: 267 100% 65%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 267 100% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Dark card backgrounds */
+    --secondary: 240 10% 8%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 10% 8%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Cyan accent */
+    --accent: 178 100% 60%;
+    --accent-foreground: 240 10% 3.9%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 10% 12%;
+    --input: 240 10% 12%;
+    --ring: 267 100% 65%;
 
-    --radius: 0.5rem;
+    /* Success green for charts */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
 
-    --sidebar-background: 0 0% 98%;
+    /* Warning orange for charts */
+    --warning: 38 92% 50%;
+    --warning-foreground: 240 10% 3.9%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Chart colors */
+    --chart-1: 267 100% 65%;  /* Electric purple */
+    --chart-2: 178 100% 60%;  /* Cyan */
+    --chart-3: 142 76% 36%;   /* Green */
+    --chart-4: 38 92% 50%;    /* Orange */
+    --chart-5: 340 82% 52%;   /* Pink */
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(267 100% 65%), hsl(267 100% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(178 100% 60%), hsl(197 100% 70%));
+    --gradient-background: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 10% 6%));
 
+    /* Glass effect */
+    --glass-bg: hsl(240 10% 8% / 0.6);
+    --glass-border: hsl(0 0% 100% / 0.1);
+
+    /* Shadows with glow */
+    --shadow-primary: 0 10px 30px -10px hsl(267 100% 65% / 0.3);
+    --shadow-glow: 0 0 40px hsl(267 100% 75% / 0.4);
+    --shadow-card: 0 8px 32px hsl(240 10% 1% / 0.4);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 267 100% 65%;
     --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 10% 8%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 10% 12%;
+    --sidebar-ring: 267 100% 65%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
+    /* Dark theme is default for this analytics dashboard */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 267 100% 65%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 10% 8%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 10% 8%;
     --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --accent: 178 100% 60%;
+    --accent-foreground: 240 10% 3.9%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 12%;
+    --input: 240 10% 12%;
+    --ring: 267 100% 65%;
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 267 100% 65%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 10% 8%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 10% 12%;
+    --sidebar-ring: 267 100% 65%;
   }
 }
 
@@ -100,6 +124,68 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground dark;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 rounded-xl shadow-[var(--shadow-card)];
+  }
+
+  /* Glow Effect */
+  .glow-primary {
+    @apply shadow-[var(--shadow-primary)];
+  }
+
+  .glow-effect {
+    @apply shadow-[var(--shadow-glow)];
+  }
+
+  /* Gradient Backgrounds */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-background {
+    background: var(--gradient-background);
+  }
+
+  /* Smooth Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Chart Container */
+  .chart-container {
+    @apply glass-card p-6 hover:shadow-[var(--shadow-primary)] transition-smooth;
+  }
+
+  /* Metric Card */
+  .metric-card {
+    @apply glass-card p-4 hover:scale-105 transition-bounce;
+  }
+
+  /* Interactive Elements */
+  .interactive-hover {
+    @apply hover:bg-primary/10 hover:border-primary/30 transition-smooth;
+  }
+
+  /* Text Gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-cyan-400 bg-clip-text text-transparent;
   }
 }
