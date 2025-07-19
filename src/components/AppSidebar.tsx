@@ -1,4 +1,4 @@
-import { Search, BarChart3, Users, Tag, Map, TrendingUp, Target } from "lucide-react"
+import { Info, Search, BarChart3, Users, Tag, Map, TrendingUp, Target, MessageCircle } from "lucide-react"
 import { NavLink, useLocation } from "react-router-dom"
 
 import {
@@ -14,13 +14,15 @@ import {
 } from "@/components/ui/sidebar"
 
 const items = [
-  { title: "Search", url: "/", icon: Search },
+  { title: "About Project", url: "/", icon: Info },
+  { title: "Search", url: "/search", icon: Search },
   { title: "Insights", url: "/insights", icon: BarChart3 },
   { title: "Demographics", url: "/demographics", icon: Users },
   { title: "Taste Analysis", url: "/taste", icon: Tag },
   { title: "Location Trends", url: "/location", icon: Map },
   { title: "Heatmap", url: "/heatmap", icon: TrendingUp },
   { title: "Recommendations", url: "/recommendations", icon: Target },
+  { title: "Chat", url: "/chat", icon: MessageCircle },
 ]
 
 export function AppSidebar() {

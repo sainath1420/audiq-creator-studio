@@ -5,9 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
+import About from "./pages/About";
 import Search from "./pages/Search";
 import Insights from "./pages/Insights";
 import Demographics from "./pages/Demographics";
+import Chat from "./pages/Chat";
 import PlaceholderPage from "./pages/PlaceholderPage";
 import NotFound from "./pages/NotFound";
 import { Tag, Map, TrendingUp, Target } from "lucide-react";
@@ -36,9 +38,11 @@ const App = () => (
               {/* Page Content */}
               <main className="flex-1 overflow-auto">
                 <Routes>
-                  <Route path="/" element={<Search />} />
+                  <Route path="/" element={<About />} />
+                  <Route path="/search" element={<Search />} />
                   <Route path="/insights" element={<Insights />} />
                   <Route path="/demographics" element={<Demographics />} />
+                  <Route path="/chat" element={<Chat />} />
                   <Route 
                     path="/taste" 
                     element={
